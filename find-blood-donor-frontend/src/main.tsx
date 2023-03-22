@@ -8,6 +8,7 @@ import { CookiesProvider } from 'react-cookie'
 import './index.css'
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
+import Search from './pages/Search';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,11 @@ const router = createBrowserRouter([
     path:"/dashboard",
     element:<Dashboard/>,
     errorElement:<ErootPage/>,
+  },
+  {
+    path:"/search",
+    element:<Search/>,
+    errorElement:<ErootPage/>
   }
 ]);
 
